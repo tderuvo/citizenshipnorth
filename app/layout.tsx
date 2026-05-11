@@ -20,16 +20,26 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: "Citizenship North | Canadian Citizenship Pathways & Eligibility",
   description:
-    "Clear guidance on Canadian citizenship by ancestry, descent, work, residency, family sponsorship, and other pathways.",
+    "Plain-English guidance on Canadian citizenship by descent, ancestry, permanent residency, work pathways, family sponsorship, and other routes to becoming Canadian.",
   metadataBase: new URL("https://citizenshipnorth.com"),
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title: "Citizenship North | Canadian Citizenship Pathways & Eligibility",
     description:
-      "Clear guidance on Canadian citizenship by ancestry, descent, work, residency, family sponsorship, and other pathways.",
+      "Plain-English guidance on Canadian citizenship by descent, ancestry, permanent residency, work pathways, family sponsorship, and other routes to becoming Canadian.",
     url: "https://citizenshipnorth.com",
     siteName: "Citizenship North",
     locale: "en_CA",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Citizenship North | Canadian Citizenship Pathways & Eligibility",
+    description:
+      "Plain-English guidance on Canadian citizenship by descent, ancestry, permanent residency, work pathways, family sponsorship, and other routes to becoming Canadian.",
   },
 };
 

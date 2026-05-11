@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 const NAV = [
   { label: "Descent", href: "#descent" },
   { label: "Pathways", href: "#pathways" },
-  { label: "FAQ", href: "#faq" },
+  { label: "FAQ", href: "#" },
   { label: "Updates", href: "#updates" },
 ];
 
@@ -72,7 +72,7 @@ const FOOTER_LINKS: [string, string][] = [
   ["About", "#"],
   ["Citizenship by Descent", "#descent"],
   ["Pathways", "#pathways"],
-  ["FAQ", "#faq"],
+  ["FAQ", "#"],
   ["Contact", "#"],
   ["Disclaimer", "#disclaimer"],
 ];
@@ -280,7 +280,7 @@ export default function Page() {
             <p className={styles.footerCopy}>
               &copy; {new Date().getFullYear()} Citizenship North. All rights reserved.
             </p>
-            <p className={styles.footerNote}>Not affiliated with the Government of Canada.</p>
+            <p className={styles.footerNote}>Independent informational resource. Not affiliated with the Government of Canada. Not legal advice.</p>
           </div>
         </div>
       </footer>
