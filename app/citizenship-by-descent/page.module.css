@@ -298,6 +298,20 @@
   margin-top: 9px;
 }
 
+/* ─── Resource links ───────────────────────────────────────── */
+.resourceLink {
+  color: #1b2d55;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(27, 45, 85, 0.35);
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+
+.resourceLink:hover {
+  color: #b03228;
+  text-decoration-color: rgba(176, 50, 40, 0.5);
+}
+
 /* ─── FAQ ──────────────────────────────────────────────────── */
 .faqList {
   margin-top: 8px;

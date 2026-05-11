@@ -30,14 +30,14 @@ const CLAIMS = [
     body: "If one of your parents was born in Canada, or became a Canadian citizen before your birth, you may be eligible to register as a Canadian citizen. This is the most direct connection under the current Citizenship Act, though the timing of your parent's citizenship and your own birth date both factor into the assessment.",
   },
   {
-    tag: "May be limited by first-generation rules",
+    tag: "Rules changed December 2025",
     title: "Those with a Canadian-Born Grandparent",
-    body: "Having a Canadian-born grandparent does not directly transfer citizenship to grandchildren under current law. What matters most is whether your parent held Canadian citizenship when you were born. If your parent was a Canadian citizen — even if they never formally exercised that status — the relevant link may run through them, not through your grandparent.",
+    body: "Having a Canadian-born grandparent may now open possibilities that previously did not exist. Bill C-3, in effect since December 15, 2025, removed the first-generation limit in some situations. If your parent was a Canadian citizen but was themselves born outside Canada, you may be Canadian in some situations — depending on your birth date and, for those born on or after December 15, 2025, whether your parent spent at least 1,095 days in Canada before your birth. Applying for a citizenship certificate is how you find out for sure.",
   },
   {
-    tag: "Registration may apply",
+    tag: "Registration matters",
     title: "Canadians Born Abroad to Canadian Parents",
-    body: "Some people were born outside Canada to Canadian parents and were never formally registered as citizens. Depending on when this occurred and the specifics of the parents' citizenship status at the time, registration may still be possible. The process and available options vary significantly by the circumstances of the birth.",
+    body: "Some people were born outside Canada to Canadian parents and were never formally registered as citizens. Bill C-3, in effect since December 15, 2025, expanded who may qualify in this situation. Those born before that date who were previously excluded only by the first-generation limit may now be Canadian automatically. For those born on or after that date, eligibility may also depend on the parent's physical presence in Canada before the birth. Applying for a citizenship certificate is the recommended first step.",
   },
   {
     tag: "Historical complexity",
@@ -80,11 +80,11 @@ const DOCS = [
 const FAQS = [
   {
     q: "Can citizenship skip generations?",
-    a: "Under the current Citizenship Act, citizenship by descent generally does not pass beyond the first generation born outside Canada. If both you and your Canadian parent were born abroad, the first-generation limit may prevent automatic citizenship from extending to you — though exceptions exist, and cases involving births before 1977 can be handled differently. This is one of the more nuanced areas of Canadian citizenship law, and outcomes depend heavily on individual circumstances.",
+    a: "Bill C-3, in effect since December 15, 2025, removed the first-generation limit in some situations. Before this change, citizenship generally could not pass to a child born abroad if the Canadian parent was also born abroad. Under the new rules, those born before December 15, 2025 who were previously excluded only by the first-generation limit may be Canadian in some situations and may be deemed citizens retroactively — without any additional presence requirement. For those born on or after December 15, 2025, the question may turn on whether the Canadian parent spent at least 1,095 days in Canada before the birth. Applying for a citizenship certificate is the way to find out for sure.",
   },
   {
     q: "Does a grandparent qualify me?",
-    a: "Having a Canadian-born grandparent does not directly confer citizenship on grandchildren under current rules. What matters most is whether your parent was a Canadian citizen at the time of your birth. If your parent holds or held Canadian citizenship — even informally — the connection may run through them to you. If the Canadian link exists only at the grandparent level, the first-generation limit generally prevents that from extending further, though the specific facts always matter.",
+    a: "The answer has become more nuanced since Bill C-3 came into effect on December 15, 2025. Previously, the first-generation limit generally prevented citizenship from flowing through a parent who was also born outside Canada. That limit has been removed in some situations. If your parent was a Canadian citizen born outside Canada, you may be Canadian in some situations — depending on your birth date and, for those born on or after December 15, 2025, the amount of time your parent spent in Canada before your birth. Applying for a citizenship certificate is how you find out whether a claim exists.",
   },
   {
     q: "What if my parent never formally claimed citizenship?",
@@ -165,7 +165,7 @@ export default function CitizenshipByDescentPage() {
                 For many people around the world, Canadian citizenship is not just a distant aspiration — it may already be part of their family&rsquo;s story. If a parent or grandparent was a Canadian citizen, or was born in Canada, that connection may be worth exploring. Whether a citizenship claim exists, and how to pursue one, depends on a range of factors this guide aims to introduce.
               </p>
               <p className={styles.bodyText}>
-                Canada&rsquo;s citizenship laws have changed significantly across the decades. The rules that governed who was considered Canadian in the 1940s were different from those in effect in 1977, when a major overhaul of the Citizenship Act took place, and different again from amendments passed in 2009 and 2017. These shifts have created situations where some people lost citizenship they didn&rsquo;t know they had, while others may have claims that were never formally registered.
+                Canada&rsquo;s citizenship laws have changed significantly across the decades. The rules that governed who was considered Canadian in the 1940s were different from those in effect in 1977, when a major overhaul of the Citizenship Act took place, and different again from amendments passed in 2009, 2017, and most recently in December 2025 through Bill C-3. These shifts have created situations where some people lost citizenship they didn&rsquo;t know they had, while others may have claims that were never formally registered.
               </p>
               <p className={styles.bodyText}>
                 This guide is a starting point — not legal advice. It introduces the general framework of citizenship by descent, explains why the rules can be complicated, and points toward the kinds of questions worth asking. Eligibility always turns on the specifics: the dates, the documents, and the details of your family&rsquo;s history.
@@ -182,7 +182,7 @@ export default function CitizenshipByDescentPage() {
                 The basic principle sounds straightforward: if your parent was Canadian when you were born, that citizenship status may have passed to you automatically or through a registration process. In practice, the picture is more complicated. The law distinguishes between different ways of acquiring citizenship, between the first and subsequent generations born outside Canada, and between births that occurred at different points in Canadian legal history.
               </p>
               <p className={styles.bodyText}>
-                One concept worth understanding early is the first-generation limit. Under current Canadian law, citizenship by descent generally cannot pass beyond the first generation born abroad. If you were born outside Canada to a Canadian parent who was also born outside Canada, you may not be covered — though exceptions exist, and the legislation has been challenged and amended over time. Whether that limit applies to your situation, and whether any exceptions might, is exactly the kind of question where the specific facts matter.
+                One concept worth understanding is the first-generation limit — and the significant change to it that came into effect on December 15, 2025. Previously, citizenship by descent generally could not pass beyond the first generation born abroad: if you were born outside Canada to a Canadian parent who was also born outside Canada, you were typically not covered. Bill C-3 removed this limit in some situations. Those born before December 15, 2025 who were previously excluded only by the first-generation limit may be Canadian in some situations and may be deemed citizens retroactively. For those born on or after December 15, 2025, eligibility may depend on whether the Canadian parent born abroad spent at least 1,095 days in Canada before the birth. Applying for a citizenship certificate is the way to find out for sure.
               </p>
             </section>
 
@@ -213,7 +213,7 @@ export default function CitizenshipByDescentPage() {
                 The 1947 act created the first formal definition of Canadian citizenship, but it was very much a product of its time. It applied different rules to men and women, treated children born to married and unmarried parents differently, and contained provisions that, over subsequent decades, came to be seen as discriminatory. Women who married foreign nationals, for instance, often lost their citizenship automatically — a rule that had cascading effects on their children&rsquo;s status.
               </p>
               <p className={styles.bodyText}>
-                The 1977 Citizenship Act addressed many of these issues, but introduced its own complexities, including the first-generation limit. Subsequent amendments — particularly those in 2009 through Bill C-37 and in 2017 through Bill C-6 — extended citizenship to some previously excluded groups, but new questions and edge cases continue to arise, and not every affected person was reached by those changes.
+                The 1977 Citizenship Act addressed many of these issues, but introduced its own complexities, including the first-generation limit. Subsequent amendments — particularly those in 2009 through Bill C-37 and in 2017 through Bill C-6 — extended citizenship to some previously excluded groups. Most recently, Bill C-3, which came into effect on December 15, 2025, removed the first-generation limit in some situations, representing the most significant change to citizenship by descent rules in many years.
               </p>
               <p className={styles.bodyText}>
                 None of this should be read as a definitive account of the law as it applies to any individual situation. Citizenship law is interpreted and applied by Immigration, Refugees and Citizenship Canada (IRCC), tested in courts, and subject to political and legislative change. The most reliable reference for current rules is always the official guidance from the Canadian government, supplemented by advice from a licensed professional when the stakes are significant.
@@ -242,17 +242,55 @@ export default function CitizenshipByDescentPage() {
             <section className={styles.contentSection}>
               <h2 className={styles.sectionHeading}>Recent Changes and Ongoing Discussions</h2>
               <p className={styles.bodyText}>
-                Canadian citizenship law has not stood still. The most significant recent changes came through Bill C-37 in 2009, which restored citizenship to a substantial group of people who had lost it under earlier rules, and through Bill C-6 in 2017, which addressed some remaining gaps. These changes surprised many people — some who had never considered themselves potentially Canadian found that a claim existed, or had been restored.
+                The most significant recent change is Bill C-3, which received Royal Assent on November 20, 2025, and came into effect on December 15, 2025. This legislation removed the first-generation limit in some situations — the rule that had prevented citizenship from passing to children born abroad when the Canadian parent was also born abroad.
               </p>
               <p className={styles.bodyText}>
-                Courts have also played an ongoing role. Several legal challenges have addressed the constitutionality of the first-generation limit and related provisions, and the results of these cases continue to shape the practical landscape. These decisions don&rsquo;t always receive broad media attention, but they can have significant implications for groups of people whose situations fall into specific legal categories.
+                For those born before December 15, 2025 who were previously excluded only by the first-generation limit, the change is retroactive: those individuals may be Canadian in some situations and are deemed citizens from birth, without needing to meet any additional presence requirement. For those born on or after December 15, 2025, eligibility may depend on whether the Canadian parent born abroad spent at least 1,095 days in Canada before the birth. Applying for a citizenship certificate is the way to confirm whether a claim exists.
               </p>
               <p className={styles.bodyText}>
-                There are active policy discussions about how Canada treats citizens abroad and their descendants. Advocates for further reform — particularly for communities with deep historical ties to Canada who remain excluded under current rules — have continued to raise these questions in parliamentary and public forums. Whether additional changes emerge, and when, remains to be seen.
+                Earlier amendments also reshaped who qualifies. Bill C-37 in 2009 restored citizenship to a substantial group of people who had lost it under earlier rules, and Bill C-6 in 2017 addressed further gaps. Courts have played an ongoing role as well — the Ontario Superior Court found in December 2023 that parts of the first-generation limit were unconstitutional, a ruling that contributed to the legislative reform that followed.
               </p>
               <p className={styles.bodyText}>
-                As with all matters of immigration and citizenship law, the situation can change. This page reflects the general landscape as understood in 2026 and should not be treated as a legal opinion, a current statement of IRCC policy, or a guarantee of eligibility in any specific case.
+                As with all matters of immigration and citizenship law, the situation can continue to change. This page reflects the general landscape as understood in 2026. The most reliable reference for current rules is always the official guidance from the Canadian government, supplemented by professional advice when the stakes are significant.
               </p>
+            </section>
+
+            {/* Official Resources */}
+            <section className={styles.contentSection} id="official-resources">
+              <h2 className={styles.sectionHeading}>Official Resources</h2>
+              <p className={styles.bodyText}>
+                The Government of Canada is the authoritative source on current citizenship rules. The pages below cover the 2025 rule changes and the process for applying for a citizenship certificate.
+              </p>
+              <ul className={styles.docList}>
+                <li className={styles.docItem}>
+                  <span className={styles.docBullet} aria-hidden="true" />
+                  <span>
+                    <a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/act-changes/rules-2025.html"
+                      className={styles.resourceLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Change to citizenship rules in 2025
+                    </a>
+                    {" "}— Canada.ca overview of Bill C-3, who is affected, and what changed
+                  </span>
+                </li>
+                <li className={styles.docItem}>
+                  <span className={styles.docBullet} aria-hidden="true" />
+                  <span>
+                    <a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/proof-citizenship.html"
+                      className={styles.resourceLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Get proof of Canadian citizenship
+                    </a>
+                    {" "}— Canada.ca guidance on applying for a citizenship certificate
+                  </span>
+                </li>
+              </ul>
             </section>
 
             {/* FAQ */}
