@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 const NAV = [
-  { label: "Descent", href: "#descent" },
+  { label: "Descent", href: "/citizenship-by-descent" },
   { label: "Pathways", href: "#pathways" },
   { label: "FAQ", href: "#" },
   { label: "Updates", href: "#updates" },
@@ -28,8 +29,8 @@ const CARDS = [
   {
     title: "You have Canadian family roots",
     body: "If a parent, grandparent, or ancestor was a Canadian citizen, you may already have a claim to citizenship. Recent legal changes have expanded eligibility for many people.",
-    cta: "Explore descent eligibility",
-    href: "#descent",
+    cta: "Learn About Descent Eligibility",
+    href: "/citizenship-by-descent",
   },
   {
     title: "You want to live or work in Canada",
@@ -70,7 +71,7 @@ const STEPS = [
 
 const FOOTER_LINKS: [string, string][] = [
   ["About", "#"],
-  ["Citizenship by Descent", "#descent"],
+  ["Citizenship by Descent", "/citizenship-by-descent"],
   ["Pathways", "#pathways"],
   ["FAQ", "#"],
   ["Contact", "#"],
@@ -92,16 +93,16 @@ export default function Page() {
       {/* Header */}
       <header className={styles.header}>
         <div className={styles.headerInner}>
-          <a href="/" className={styles.logo}>
+          <Link href="/" className={styles.logo}>
             <span className={styles.logoAccent} />
             <span className={styles.logoText}>Citizenship North</span>
-          </a>
+          </Link>
           <nav className={styles.nav}>
             {NAV.map(({ label, href }) => (
-              <a key={label} href={href} className={styles.navLink}>{label}</a>
+              <Link key={label} href={href} className={styles.navLink}>{label}</Link>
             ))}
           </nav>
-          <a href="#descent" className={styles.headerCta}>Check Eligibility</a>
+          <Link href="#descent" className={styles.headerCta}>Check Eligibility</Link>
         </div>
       </header>
 
@@ -117,8 +118,8 @@ export default function Page() {
               Explore citizenship by descent, family lineage, work, residency, and other pathways — with plain-English guidance that helps you understand what applies to your situation.
             </p>
             <div className={styles.heroActions}>
-              <a href="#descent" className={styles.heroBtnPrimary}>Check Eligibility</a>
-              <a href="#pathways" className={styles.heroBtnSecondary}>Explore Pathways</a>
+              <Link href="#descent" className={styles.heroBtnPrimary}>Check Eligibility</Link>
+              <Link href="#pathways" className={styles.heroBtnSecondary}>Explore Pathways</Link>
             </div>
             <p className={styles.heroDisclaimer}>
               Independent informational resource. Not affiliated with the Government of Canada.
@@ -169,9 +170,9 @@ export default function Page() {
               <div key={title} className={styles.card}>
                 <h3 className={styles.cardTitle}>{title}</h3>
                 <p className={styles.cardBody}>{body}</p>
-                <a href={href} className={styles.cardLink}>
+                <Link href={href} className={styles.cardLink}>
                   {cta} <span aria-hidden="true">&#8594;</span>
-                </a>
+                </Link>
               </div>
             ))}
           </div>
@@ -187,9 +188,9 @@ export default function Page() {
             <p className={styles.descentCopy}>
               Recent legal and policy changes may affect people with Canadian parents, grandparents, or family connections abroad. Citizenship North helps you understand the questions to ask before spending time or money gathering documents.
             </p>
-            <a href="#process" className={styles.descentBtn}>
-              Learn About Descent Eligibility
-            </a>
+            <Link href="/citizenship-by-descent" className={styles.descentBtn}>
+              Explore Citizenship by Descent
+            </Link>
           </div>
         </div>
       </section>
@@ -272,7 +273,7 @@ export default function Page() {
             </div>
             <nav className={styles.footerNav}>
               {FOOTER_LINKS.map(([label, href]) => (
-                <a key={label} href={href} className={styles.footerNavLink}>{label}</a>
+                <Link key={label} href={href} className={styles.footerNavLink}>{label}</Link>
               ))}
             </nav>
           </div>
