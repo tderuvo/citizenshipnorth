@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const NAV = [
   { label: "Descent", href: "/citizenship-by-descent", active: true },
   { label: "Pathways", href: "/#pathways" },
-  { label: "FAQ", href: "#" },
+  { label: "FAQ", href: "/canadian-citizenship-faq" },
   { label: "Updates", href: "/#updates" },
 ];
 
@@ -18,7 +18,7 @@ const FOOTER_LINKS: [string, string][] = [
   ["About", "#"],
   ["Citizenship by Descent", "/citizenship-by-descent"],
   ["Pathways", "/#pathways"],
-  ["FAQ", "#"],
+  ["FAQ", "/canadian-citizenship-faq"],
   ["Contact", "#"],
   ["Disclaimer", "#disclaimer"],
 ];

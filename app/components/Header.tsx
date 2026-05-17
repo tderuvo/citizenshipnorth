@@ -5,7 +5,7 @@ import { useState } from "react";
 const navLinks = [
   { label: "Citizenship by Descent", href: "#ancestry" },
   { label: "Pathways", href: "#pathways" },
-  { label: "FAQ", href: "#faq" },
+  { label: "FAQ", href: "/canadian-citizenship-faq" },
   { label: "Updates", href: "#updates" },
 ];
 

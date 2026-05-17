@@ -16,5 +16,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    {
+      url: "https://citizenshipnorth.com/canadian-citizenship-faq",
+      lastModified: new Date("2026-05-16"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
   ];
 }

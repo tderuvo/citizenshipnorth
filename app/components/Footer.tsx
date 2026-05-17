@@ -2,7 +2,7 @@ const navLinks = [
   { label: "About", href: "#" },
   { label: "Citizenship by Descent", href: "#ancestry" },
   { label: "Pathways", href: "#pathways" },
-  { label: "FAQ", href: "#faq" },
+  { label: "FAQ", href: "/canadian-citizenship-faq" },
   { label: "Contact", href: "#" },
   { label: "Disclaimer", href: "#" },
 ];
